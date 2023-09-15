@@ -9,15 +9,15 @@ function AnimatedCard({ title, content }) {
 
   return (
     <animated.div
-      className="mx-auto w-full max-w-2xl md:max-w-3xl lg:max-w-4xl bg-white p-6 md:p-8 rounded-lg shadow-2xl mb-12 cursor-pointer transform"
+      className="mx-auto w-full max-w-2xl md:max-w-3xl lg:max-w-4xl bg-blue-purple-gradient p-6 md:p-8 rounded-lg shadow-2xl mb-12 cursor-pointer transform"
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: [(y - window.innerHeight / 2) / 100, -(x - window.innerWidth / 2) / 100, 1.025] })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{
-        transform: props.xys.interpolate((x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`)
+        transform: props.xys.to((x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`)
       }}
     >
-      <h2 className="text-2xl font-bold mb-4">{title}</h2>
-      <p className="text-lg">{content}</p>
+      <h2 className="text-2xl text-gray-900 font-bold mb-4">{title}</h2>
+      <p className="text-lg text-gray-900">{content}</p>
     </animated.div>
   );
 }
