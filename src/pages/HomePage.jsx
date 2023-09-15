@@ -3,15 +3,17 @@ import AnimatedCard from '../components/AnimatedCard';
 
 function HomePage() {
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col pt-20 px-6 md:px-12 lg:px-24 overflow-x-hidden">
+    <div className="bg-gray-900 min-h-screen flex flex-col pt-20 px-6 md:px-12 lg:px-24 overflow-x-hidden">
       <div>
-        <h1 className="text-6xl font-bold text-black text-center mb-12 shadow-text">
-          Welcome to My Piano World
-        </h1>
+      <h1 className="text-8xl font-extrabold text-transparent bg-clip-text bg-red-purple-gradient text-center mb-12 shadow-text">
+      Amaar's Piano Lessons
+      </h1>
+
+
 
         <div className="flex justify-center mb-12">
           {/* Profile picture */}
-          <img src="../../public/pfp.png" alt="Your Name" className="w-48 h-48 rounded-full shadow-2xl mb-6 md:w-64 md:h-64 object-cover"/>
+          <img src="/pfp.png" alt="Your Name" className="w-48 h-48 rounded-full shadow-2xl mb-6 md:w-64 md:h-64 object-cover"/>
         </div>
       </div>
 

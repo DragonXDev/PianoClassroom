@@ -44,3 +44,15 @@
 .shadow-text {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.award-left,
+.award-right {
+  transform: translateX(0);
+  top: 25%;
+}
+.award-left {
+  left: 0;
+}
+.award-right {
+  right: 0;
+}
