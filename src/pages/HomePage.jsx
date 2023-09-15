@@ -6,7 +6,7 @@ function HomePage() {
     <div className="bg-gray-900 min-h-screen flex flex-col pt-20 px-6 md:px-12 lg:px-24 overflow-x-hidden">
       <div>
       <h1 className="text-8xl font-extrabold text-transparent bg-clip-text bg-red-purple-gradient text-center mb-12 shadow-text">
-        Amaar's Piano Lessons
+      Amaar's Piano Lessons
       </h1>
 
 
